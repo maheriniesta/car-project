@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bodyCarHear">
+    <div class="text-white py-5 text-center ">
+        <h1 class="fs-1">car hear</h1>
+
+    </div>
+    
+    <div class="carHear text-center container">
+        <div class="row">
+            <div class="row mb-3">
+                <label for="" class="col-sm-2 col-form-label text-warning">car name</label>
+                <div class="col-sm-10">
+                    <input type="text" class=" inCar form-control text-warning"  id="nameCarHear" placeholder="Enter the car name"/>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="" class="col-sm-2 col-form-label text-warning">car type</label>
+                <div class="col-sm-10">
+                    <input type="text" class="inCar form-control text-warning" id="typeCarHear" placeholder="enter the car type"/>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="" class="col-sm-2 col-form-label text-warning">car model</label>
+                <div class="col-sm-10">
+                    <input type="date" class="inCar form-control text-warning" id="modelCarHear" placeholder="Enter the car model"/>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="" class="col-sm-2 col-form-label text-warning">car price</label>
+                <div class="col-sm-10">
+                    <input type="number" class="inCar form-control text-warning" id="priceCarHear" placeholder="Enter the car price"/>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="" class="col-sm-2 col-form-label text-warning"> car img</label>
+                <div class="col-sm-2">
+                    <input type="file" class="text-warning" id="carHearImg" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="" class="col-sm-2 col-form-label text-warning" > search</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control search text-warning" onkeyup="searchHear(this.value)" placeholder="search"/>
+                </div>
+            </div>
+            <div class="">
+                <button type="button" class="btn btn-outline-success" id="addCareHear" >add car</button>
+                <button type="button" class="btn btn-outline-danger" onclick="deleteAllHear()">delete all</button>
+            </div>
+
+        </div>
+        <table class="table table-striped table-bordered mt-5">
+            <thead>
+              <tr>
+                <th scope="col" class="text-warning">#</th>
+                <th scope="col" class="text-warning">car name</th>
+                <th scope="col" class="text-warning">car type</th>
+                <th scope="col" class="text-warning">car model</th>
+                <th scope="col" class="text-warning">car price</th>
+                <th scope="col" class="text-warning">car img</th>
+                <th scope="col" class="text-warning">delete</th>
+                <th scope="col" class="text-warning">update</th>
+                
+              </tr>
+            </thead>
+            <tbody id="carHearData">
+            
+            </tbody>
+          </table>
+    </div>
+
+    
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
